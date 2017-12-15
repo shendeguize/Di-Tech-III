@@ -8,12 +8,12 @@ The whole process is devided into two parts:
 
 
  
-### Part 2：  
-To Simulate **7** intersections：  
-__To Simulate **1** intersection：--**4** approaches:  
-____To Simulate **1** approach: __**3** directions:  
-______To Simulate **1** direction:  
-
-
-Hi r u ok.
-Yap
+### Part 2：  
+_ To Simulate **7** intersections：  
+___ To Simulate **1** intersection：__**4** approaches:  
+_____ To Simulate **1** approach: __**3** directions:  
+_______ To Simulate **1** direction:  
+ 
+We need:
+1.number of lanes  
+2. 
