@@ -24,8 +24,8 @@ dict{
  
 ### Part 2：  
 _To Simulate **7** intersections：  
-___To Simulate **1** intersection：__**4** approaches:  
-_____To Simulate **1** approach: __**3** directions:  
+___To Simulate **1** intersection： __**4** approaches:  
+_____To Simulate **1** approach:  __**3** directions:  
 _______To Simulate **1** direction:  
 We need:  
 1.number of lanes  
