@@ -29,8 +29,13 @@ _____To Simulate **1** approach: __**3** directions:
 _______To Simulate **1** direction:  
 We need:  
 1.number of lanes  
-2.distance  
-3.mean vehicle number  
-4.mean vehicle speed  
-5.effective green split  
-
+2.distance    
+3.mean vehicle number   
+4.mean vehicle speed    
+5.effective green split   
+ 
+#### Simulation Process：   
+Generate Vehicles at begining line    
+Discharge Vehicles at ending line   
+Renew the Vehicle State on road
+Count the traveling time
