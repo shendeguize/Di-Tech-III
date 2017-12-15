@@ -9,18 +9,18 @@ The whole process is devided into two parts:
 
  
 **output**  
-dict{   
-'Intersection_1':'dict{   
-'Approach_1':'dict{   
-'Direction_1':'dict{    
-'lane':''    
-'distance':''   
-'meanVeh':''    
-'meanSpeed':''     
-}'    
-}'    
-}'    
-} 
+dict{
+'Intersection_1':'dict{
+  'Approach_1':'dict{
+    'Direction_1':'dict{
+      'lane':''
+      'distance':''
+      'meanVeh':''
+      'meanSpeed':''
+      }'
+    }'
+  }'
+}
  
 ### Part 2：  
 _To Simulate **7** intersections：  
