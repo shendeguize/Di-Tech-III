@@ -5,17 +5,14 @@ The whole process is devided into two parts:
  
 ### Part 1：  
 
-
-
- 
 **output**  
 dict{
 'Intersection_1':'dict{
   'Approach_1':'dict{
     'Direction_1':'dict{
-      'lane':''
-      'distance':''
-      'meanVeh':''
+      'lane':'',
+      'distance':'',
+      'meanVeh':'',
       'meanSpeed':''
       }'
     }'
@@ -39,3 +36,16 @@ Generate Vehicles at begining line
 Discharge Vehicles at ending line   
 Renew the Vehicle State on road
 Count the traveling time
+
+dict_BeforeIntersection{
+  'list_Veh':[
+    Veh_id
+  ]
+  'Veh_id':dict_VehState{
+    'location':x,
+    'Velocity':v,
+    'acceleration':a
+  }
+}
+
+Time_start,Time_end,Time_delta
