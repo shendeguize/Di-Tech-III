@@ -5,9 +5,19 @@
 
 
 Part II:Simulation
+dict_DirectionFeature{
+  'Inflow'：{'OutFlow_Last':{'Time_Series':Probability},
+             'Dilution':{Time_Series':coefficient}
+            },
+  'Lanes':  ,
+  'Timing': {'Green_Ef_Begin':  ,
+             'Greeen_Ef_End': ,
+            },
+  'Distance': 
+}
 
 dict_BeforeIntersection{
-  'list_Veh':[Veh_id]
+  'list_Veh':[Veh_id],
   'dict_Veh':{'Veh_id':{'Location':x,
                         'Velocity':v,
                         'Acceleration':a,
@@ -19,7 +29,7 @@ dict_BeforeIntersection{
 }
 
 dict_PassVeh{
-  'list_Veh':[Veh_id]
+  'list_Veh':[Veh_id],
   'dict_Veh':{'Veh_id':{'Location':x,
                         'Velocity':v,
                         'Acceleration':a,
@@ -33,6 +43,7 @@ dict_PassVeh{
 
 
 **1** Direction:
+**lanes**
   Process:
     1. Generate vehicles according to (a) Direction Features (b) Time_now (c) Gen Time of last veh (d) headway
        
