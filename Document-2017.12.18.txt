@@ -1,0 +1,58 @@
+ 
+ 
+
+
+
+
+Part II:Simulation
+
+dict_BeforeIntersection{
+  'list_Veh':[Veh_id]
+  'dict_Veh':{'Veh_id':{'Location':x,
+                        'Velocity':v,
+                        'Acceleration':a,
+                        'Gen_Time': ,
+                        'Dep_Time': ,
+                        'Stop_Times':
+                       }
+             }
+}
+
+dict_PassVeh{
+  'list_Veh':[Veh_id]
+  'dict_Veh':{'Veh_id':{'Location':x,
+                        'Velocity':v,
+                        'Acceleration':a,
+                        'Gen_Time': ,
+                        'Dep_Time': ,
+                        'Stop_Times':
+                       }
+             }
+}
+
+
+
+**1** Direction:
+  Process:
+    1. Generate vehicles according to (a) Direction Features (b) Time_now (c) Gen Time of last veh (d) headway
+       
+       
+       
+    2. Update the state of vehicles on road
+      1)Update location x
+      2)Update Velocity v
+        if the velocity is \le to 0
+          then the velocity is 0, 'Stop_Times'+1
+      3)Update Acceleration a:
+        a)if is first veh
+          if the distance to the intersection is in the interval [A,B] (Where A=Braking distance，B=A+minimum headway* mean speed）
+            then, the acceleration is a negative const.
+          else:
+            the acceleraiton is 0
+        b)if not first veh
+          the acceleration is based on λ, velocities (v_i,v_i-1)
+    3. Departure of vehicles according to (a) vehicle state (b) TimingPlan (c) Direction Feature
+      if the location x \ge the distance,
+        then update the 'Dep_Time', pop the item and update the item to dict_PassVeh
+    
+    
