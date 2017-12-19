@@ -6,14 +6,17 @@
 
 Part II:Simulation
 dict_DirectionFeature{
-  'Inflow'：{'OutFlow_Last':{'Time_Series':Probability},
+  'Inflow'：{'OutFlow_Last':{'Time_Series':Probability},#Time_Series is in every 1 seconds
              'Dilution':{Time_Series':coefficient}
             },
   'Lanes':  ,
   'Timing': {'Green_Ef_Begin':  ,
              'Greeen_Ef_End': ,
+             'Cycle_len': 
             },
-  'Distance': 
+  'Distance': ,
+  'HeadwayMin': ,
+  'Velocitymean': 
 }
 
 dict_BeforeIntersection{
