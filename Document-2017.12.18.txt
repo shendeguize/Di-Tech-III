@@ -16,7 +16,8 @@ dict_DirectionFeature{
             },
   'Distance': ,
   'HeadwayMin': ,
-  'Velocitymean': 
+  'VelocityMean': ,
+  'VelocityDepature':
 }
 
 dict_BeforeIntersection{
@@ -59,12 +60,24 @@ dict_PassVeh{
           then the velocity is 0, 'Stop_Times'+1
       3)Update Acceleration a:
         a)if is first veh
-          if the distance to the intersection is in the interval [A,B] (Where A=Braking distance，B=A+minimum headway* mean speed）
-            then, the acceleration is a negative const.
-          else:
-            the acceleraiton is 0
+          I. if Green:
+            i. if the velocity \le the VelocityDeparture
+              the acceleration is Lamda*(VelocityDeparture-Velocity)
+            ii. if the velocity \ge the VelocityDeparture
+              the acceleration is 0
+          II. if Red:
+            i. if the velocity=0:
+              acceleraion is 0
+            ii. if the velocity>0
+              if v^2/2Dec < distance
+                the acceleration is -Deceleraion
+              else
+                a=0
         b)if not first veh
-          the acceleration is based on λ, velocities (v_i,v_i-1)
+          if distance from the pre veh \le headwaymin*velocity/Lamda
+            then a=lamda(vi-1-vi)
+          else
+            a=0
     3. Departure of vehicles according to (a) vehicle state (b) TimingPlan (c) Direction Feature
       if the location x \ge the distance,
         then update the 'Dep_Time', pop the item and update the item to dict_PassVeh
