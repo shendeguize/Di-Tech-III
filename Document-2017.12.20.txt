@@ -1,0 +1,41 @@
+
+
+
+
+Simulation Part:
+To Simulate **7** Intersection:
+  To Simulate **1** Intersection:(Conbine the Outflow and Dilution as Inflow), Simulate 4 Direction
+    To Simulate **1** Direction:(Analysis the Direction Features)
+      To Simulate **1** lane:
+      
+      Gen_Veh(dict_DirectionFeature,Time_Now,dict_BeforeIntersection):
+        if first veh
+        
+        else:
+          if Random>Inflow_Probability
+        
+      Update_Location(Veh_id,dict_BeforeIntersection,Time_Step):
+        
+      Update_Velocity(Veh_id,dict_BeforeIntersection,Time_Step,dict_DirectionFeature):
+        
+      Update_Acceleration(Veh_id,Lamda,dict_BeforeIntersection,dict_DirectionFeature,Time_Now):
+        if first Veh:
+          if Green:
+            if v<V_Dep and dist_IS<v^2/d:
+              a=Lamda*(V_Dep-v)
+            else:
+              a=0
+          else:
+            if v^2/(2d)<Dist_IS<v^2/d:
+              a=-decleration
+            else:
+              a=0
+        else:
+          if Dist_Veh<HeadwayMin*v/Lamda:
+            a=lamda*(Vi-1-vi)
+          else:
+            a=0
+      
+      Sim_Lane(
+          
+            
