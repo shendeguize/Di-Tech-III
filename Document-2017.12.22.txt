@@ -1,0 +1,27 @@
+Sim_Lane:
+
+TimeStep:
+          Update dict_Veh:
+                          Append new Veh
+                          Update dict_VehState:
+                                            Update_Location
+                                            Update_Velocity:
+                                                                VelocityLimit
+                                            Update_Acceleration:
+                                                                DistanceBraking
+                                                                First Veh:
+                                                                          Green:
+                                                                                DistanceIntersection < VelocityDeparture^2/(2D):
+                                                                                                                a=Lamda*(VDep-V)
+                                                                          else:
+                                                                                DistanceBraking < DistanceIntersection < DistanceBraking/Lamda :
+                                                                                                                a=Deceleration
+                                                                else:
+                                                                          DistanceVeh < DistanceBraking/Lamda:
+                                                                                                                a=Lamda/DistanceVeh*(Vi-1-Vi)
+          Update dict_Pass
+          CSV writer Trace
+Calc Delay StopTimes
+Output:
+           dict_LaneOut
+  
