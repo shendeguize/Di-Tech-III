@@ -14,7 +14,7 @@ TimeStep:
                                                                                 DistanceIntersection < VelocityDeparture^2/(2D):
                                                                                                                 a=Lamda*(VDep-V)
                                                                           else:
-                                                                                DistanceBraking < DistanceIntersection < DistanceBraking/Lamda :
+                                                                                DistanceBraking < DistanceIntersection < DistanceBraking/Lamda:
                                                                                                                 a=Deceleration
                                                                 else:
                                                                           DistanceVeh < DistanceBraking/Lamda:
@@ -24,4 +24,20 @@ TimeStep:
 Calc Delay StopTimes
 Output:
            dict_LaneOut
-  
+
+dict_DirectionFeature
+
+
+dict_Veh{
+          'List_Veh':[],
+          'dict_VehState':{
+                            'Location': ,
+                            'Velocity': ,
+                            'Acceleration': ,
+                            'TimeGen': ,
+                            'TimeDep': ,
+                            'Stops': 
+                          }
+        }
+
+dict_Pass
