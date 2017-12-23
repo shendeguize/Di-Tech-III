@@ -44,6 +44,7 @@ dict_DirectionFeature{
                                           'VelocityMean': ,
                                           'VelocityDeparture':  ,
                                           'VelocityVariance': ,
+                                          'VelocityLimit':  ,
                                           'HeadwayMin': ,
                                           'Deceleration': 
                                          },
