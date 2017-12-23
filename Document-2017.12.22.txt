@@ -25,19 +25,51 @@ Calc Delay StopTimes
 Output:
            dict_LaneOut
 
-dict_DirectionFeature
+dict_DirectionFeature{
+                       'Inflow':{
+                                 'Source':{
+                                           'TimeSeires': ,
+                                          }
+                                 'Dilution':{
+                                              'TimeSeries': ,
+                                            }
+                                },
+                      'Timing':{
+                                'Green_Ef_Start': ,
+                                'Green_Ef_End': ,
+                                'Cycle_len':  ,
+                                'GreenMin': 
+                               }
+                      'VelocityFeatures':{
+                                          'VelocityMean': ,
+                                          'VelocityDeparture':  ,
+                                          'VelocityVariance': ,
+                                         }
+                      'Lanes':  
+                    }
 
 
 dict_Veh{
-          'List_Veh':[],
-          'dict_VehState':{
-                            'Location': ,
-                            'Velocity': ,
-                            'Acceleration': ,
-                            'TimeGen': ,
-                            'TimeDep': ,
-                            'Stops': 
+          'List_Veh':[Veh_id],
+          'dict_VehState':{'Veh_id':{
+                                      'Location': ,
+                                      'Velocity': ,
+                                      'Acceleration': ,
+                                      'TimeGen': ,
+                                      'TimeDep': ,
+                                      'Stops': 
+                                    }
                           }
         }
 
-dict_Pass
+dict_Pass{
+          'List_Veh':[Veh_id],
+          'dict_Veh':{
+                      'Veh_id':{
+                                'TimeGen':  ,
+                                'TimeDep':  ,
+                                'Stops':  
+                               }
+                     }
+         }
+
