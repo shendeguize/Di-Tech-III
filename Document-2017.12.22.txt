@@ -50,7 +50,7 @@ dict_DirectionFeature{
 
 
 dict_Veh{
-          'List_Veh':[Veh_id],
+          'list_Veh':[Veh_id],
           'dict_VehState':{'Veh_id':{
                                       'Location': ,
                                       'Velocity': ,
@@ -63,7 +63,7 @@ dict_Veh{
         }
 
 dict_Pass{
-          'List_Veh':[Veh_id],
+          'list_Veh':[Veh_id],
           'dict_Veh':{
                       'Veh_id':{
                                 'TimeGen':  ,
