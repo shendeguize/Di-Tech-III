@@ -1,0 +1,38 @@
+dict_IntersectionFeature{
+                          'list_TimingPlan':[],
+                          'list_Stage':[],
+                          'dict_StageFeature':{
+                                                'list_Direction':[],
+                                                'dict_Direction':{
+                                                                   'Direction_id':dict_DirectionFeature
+                                                                 }
+                                              }
+                        }
+
+dict_DirectionFeature{
+                       'Inflow':{
+                                 'Source':{
+                                           'TimeSeires': ,
+                                          },
+                                 'Dilution':{
+                                              'TimeSeries': ,
+                                            }
+                                },
+                      'Timing':{
+                                'GreenEfStart': ,
+                                'GreenEfEnd': ,
+                                'CycleLen':  ,
+                                'GreenMin': 
+                               },
+                      'VelocityFeatures':{
+                                          'VelocityMean': ,
+                                          'VelocityDeparture':  ,
+                                          'VelocityVariance': ,
+                                          'VelocityLimit':  ,
+                                          'HeadwayMin': ,
+                                          'Deceleration': 
+                                         },
+                      'Lanes':  ,
+                      'Distance':  ,
+                      'Lamda':
+                    }
