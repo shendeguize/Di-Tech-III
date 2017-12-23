@@ -29,7 +29,7 @@ dict_DirectionFeature{
                        'Inflow':{
                                  'Source':{
                                            'TimeSeires': ,
-                                          }
+                                          },
                                  'Dilution':{
                                               'TimeSeries': ,
                                             }
@@ -39,14 +39,14 @@ dict_DirectionFeature{
                                 'GreenEfEnd': ,
                                 'CycleLen':  ,
                                 'GreenMin': 
-                               }
+                               },
                       'VelocityFeatures':{
                                           'VelocityMean': ,
                                           'VelocityDeparture':  ,
                                           'VelocityVariance': ,
                                           'HeadwayMin': ,
                                           'Deceleration': 
-                                         }
+                                         },
                       'Lanes':  
                     }
 
