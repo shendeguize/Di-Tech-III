@@ -48,7 +48,8 @@ dict_DirectionFeature{
                                           'HeadwayMin': ,
                                           'Deceleration': 
                                          },
-                      'Lanes':  
+                      'Lanes':  ,
+                      'Distance':
                     }
 
 
