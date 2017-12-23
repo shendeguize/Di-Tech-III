@@ -35,15 +35,16 @@ dict_DirectionFeature{
                                             }
                                 },
                       'Timing':{
-                                'Green_Ef_Start': ,
-                                'Green_Ef_End': ,
-                                'Cycle_len':  ,
+                                'GreenEfStart': ,
+                                'GreenEfEnd': ,
+                                'CycleLen':  ,
                                 'GreenMin': 
                                }
                       'VelocityFeatures':{
                                           'VelocityMean': ,
                                           'VelocityDeparture':  ,
                                           'VelocityVariance': ,
+                                          'HeadwayMin':
                                          }
                       'Lanes':  
                     }
