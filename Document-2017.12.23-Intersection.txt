@@ -34,5 +34,7 @@ dict_DirectionFeature{
                                          },
                       'Lanes':  ,
                       'Distance':  ,
-                      'Lamda':
+                      'Lamda':,
+                      'VehLen':2.5,
+                      'VehLenFactor':1.5
                     }
