@@ -21,5 +21,34 @@ dict_VelocityFeature{
 dict_SimuVariables{
                     'Lamda':0.6667,
                     'VehLen':2.5,
-                    'VehLenFactor':15
+                    'VehLenFactor':15,
+                    'TimeStep':0.01,
+                    'Cycles':2,
+                    'Depth':2
                   }
+dict_DirectionFeature={
+                       'Inflow':{
+                                 'Source':{
+                                          },
+                                 'Dilution':{
+                                            }
+                                },
+                      'Timing':{
+                                'GreenEfStart':0,
+                                'GreenEfEnd':100,
+                                'CycleLen':200
+                               },
+                      'VelocityFeatures':{
+                                          'VelocityMean':6,
+                                          'VelocityDeparture':8,
+                                          'VelocityVariance':0,
+                                          'VelocityLimit':10,
+                                          'HeadwayMin':3,
+                                          'Deceleration':10
+                                         },
+                      'Lanes':2,
+                      'Distance':200,
+                      'Lamda':0.6667,
+                      'VehLen':2.5,
+                      'VehLenFactor':1.5
+                    }
