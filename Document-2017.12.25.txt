@@ -26,12 +26,12 @@ dict_DirectionFeature{
                                 'GreenMin': 
                                },
                       'VelocityFeatures':{
-                                          'VelocityMean': ,
-                                          'VelocityDeparture':  ,
-                                          'VelocityVariance': ,
-                                          'VelocityLimit':  ,
-                                          'HeadwayMin': ,
-                                          'Deceleration': 
+                                            'VelocityMean': ,
+                                            'VelocityDeparture':  ,
+                                            'VelocityVariance': ,
+                                            'VelocityLimit':  ,
+                                            'HeadwayMin': ,
+                                            'Deceleration': 
                                          },
                       'Lanes':  ,
                       'Distance':  ,
