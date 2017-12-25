@@ -1,0 +1,43 @@
+dict_IntersectionFeature{
+                          'list_TimingPlan':[],
+                          'list_Stage':[],
+                          'Stage_id':{
+                                                'list_Direction':[],
+                                                'dict_Direction':{
+                                                                   'Direction_id':dict_DirectionFeature
+                                                                 }
+                                              }
+                        }
+
+dict_DirectionFeature{
+                       'Inflow':{
+                                 'Vph':
+                                 #'Source':{
+                                           'TimeSeires': ,
+                                          },
+                                 #'Dilution':{
+                                              'TimeSeries': ,
+                                            }
+                                },
+                      #'Timing':{
+                                'GreenEfStart': ,
+                                'GreenEfEnd': ,
+                                'CycleLen':  ,
+                                'GreenMin': 
+                               },
+                      'VelocityFeatures':{
+                                          'VelocityMean': ,
+                                          'VelocityDeparture':  ,
+                                          'VelocityVariance': ,
+                                          'VelocityLimit':  ,
+                                          'HeadwayMin': ,
+                                          'Deceleration': 
+                                         },
+                      'Lanes':  ,
+                      'Distance':  ,
+                      #'Lamda':,
+                      #'VehLen':2.5,
+                      #'VehLenFactor':1.5
+                    }
+                    
+                    建议看一下deepcopy
