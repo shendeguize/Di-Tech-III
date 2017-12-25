@@ -1,0 +1,25 @@
+dict_IntersectionFeature{
+                          'list_Stage':[1,2,3,4],
+                          'list_TimingPlan':[111,9,43,37],#无相位差
+                          'list_TimingLimit':[35,8,10,35],
+                          'list_Direction':['N2E','E2W','E2S','S2N','S2W','W2E','W2N','N2S'],#Direction_id Like E2W, which means from East to West(X+ to X-)
+                          'Direction_id':{
+                                           'list_StageidWithThis':[],
+                                           'Volume':  ,
+                                           'Lanes':   ,
+                                           'Distance':
+                                          }
+                        }
+dict_VelocityFeature{
+                      'VelocityMean': ,
+                      'VelocityDeparture':  ,
+                      'VelocityVariance': ,
+                      'VelocityLimit':  ,
+                      'HeadwayMin': ,
+                      'Deceleration': 
+                     }
+dict_SimuVariables{
+                    'Lamda':0.6667,
+                    'VehLen':2.5,
+                    'VehLenFactor':15
+                  }
